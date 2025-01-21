@@ -20,25 +20,164 @@
     <link rel="stylesheet" href="./styles/output.css" />
     <title>Portfolio - 01</title>
   </head>
-  <body class="bg-black text-white font-prompt">
-    <header class="max-w-6xl mx-auto">
+  <body class="bg-black text-white font-prompt transition-all-500">
+    <header class="max-w-6xl fixed z-50 top-0 left-0 right-0 mx-auto">
       <nav>
         <div
-          class="flex justify-between items-center py-4 border-b border-gray-100/10 px-4"
+          class="flex justify-between items-center py-4 border-b bg-black border-gray-100/10 px-6"
         >
           <a
             class="text-3xl before:content-['{'] after:content-['}'] before:mr-2 before:text-gray-500 after:text-gray-500 before:font-nunito after:font-nunito after:ml-2 font-semibold cursor-pointer"
-            >Uniq<span class="text-highlight">weber</span></a
+            >U<span class="text-highlight">W</span></a
           >
-          <div class="flex items-center gap-6">
-            <a href="#" class="hover:text-highlight transition-all-500">Home</a>
-            <a href="#" class="hover:text-highlight transition-all-500"
+          <button class="sm:hidden text-3xl text-white">
+            <i id="openMenu" class="fa-solid fa-bars"></i>
+          </button>
+          <div
+            id="navLinks"
+            class="h-screen sm:h-auto sm:items-center sm:gap-6 flex flex-col sm:flex-row items-start border-l border-gray-100/10 bg-[#080808] sm:bg-transparent w-2/3 sm:w-auto absolute top-0 -right-[110%] transition-all-500 sm:static sm:shadow-none"
+          >
+            <div
+              class="h-[69px] items-center justify-between border-b border-gray-100/10 w-full px-6 mb-4 flex sm:hidden"
+            >
+              <a
+                class="text-2xl before:content-['{'] after:content-['}'] before:mr-2 before:text-gray-500 after:text-gray-500 before:font-nunito after:font-nunito after:ml-2 font-semibold cursor-pointer"
+                >U<span class="text-highlight">W</span></a
+              >
+              <button id="closeMenu" class="text-3xl hover:text-highlight">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <a
+              href="#"
+              class="hover:text-highlight transition-all-500 px-6 py-4 sm:py-0 sm:px-0"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="hover:text-highlight transition-all-500 px-6 py-4 sm:py-0 sm:px-0"
               >Projects</a
             >
-            <a href="#" class="hover:text-highlight transition-all-500">Blog</a>
+            <a
+              href="#"
+              class="hover:text-highlight transition-all-500 px-6 py-4 sm:py-0 sm:px-0"
+              >Blog</a
+            >
           </div>
         </div>
       </nav>
     </header>
+    <main class="max-w-6xl mx-auto py-32 lg:py-[70px]">
+      <section class="hiden">
+        <div
+          class="flex flex-col justify-center lg:h-[calc(100vh-140px)] 2xl:h-[60vh]"
+        >
+          <div>
+            <div class="relative px-6 pt-2">
+              <img
+                src="./assets/26432.svg"
+                class="h-28 md:h-[140px] 2xl:h-[170px] -z-10 absolute left-0 top-0"
+                alt="svg"
+              />
+              <h2 class="text-2xl text-highlight font-nunito">
+                Hey there!, i'm-
+              </h2>
+              <h1
+                class="text-6xl sm:text-7xl md:text-8xl 2xl:text-9xl font-bold -ml-1"
+              >
+                Uniqweber.
+              </h1>
+            </div>
+            <p
+              class="text-xl sm:text-2xl my-8 text-gray-500 sm:leading-8 transition-all-500 w-full lg:w-1/2 px-6"
+            >
+              <span class="text-white font-nunito">Software Engineer :</span> A
+              self-taught developer with an interest in Computer Science.
+            </p>
+            <div
+              class="px-5 text-gray-500 text-xs md:text-base space-y-1 md:space-y-0"
+            >
+              <p>
+                ⚡ Frontend Engineer at <span class="text-highlight">TOTO</span>
+              </p>
+              <p class="">
+                🚀 Currently specializing in Frontend (React / Next.js)
+              </p>
+            </div>
+            <div class="px-5 mt-8 flex items-center gap-4 font-nunito">
+              <button
+                class="flex items-center gap-2 bg-highlight/10 px-4 md:px-6 md:text-base text-sm rounded-md py-2"
+              >
+                <i class="fa-brands fa-github text-highlight"></i>
+                <span class="text-gray-300">Github</span>
+              </button>
+              <button
+                class="flex items-center gap-2 bg-highlight/10 px-4 md:px-6 md:text-base text-sm rounded-md py-2"
+              >
+                <i class="fa-brands fa-linkedin text-highlight"></i>
+                <span class="text-gray-300">LinkedIn</span>
+              </button>
+              <button
+                class="flex items-center gap-2 bg-highlight/10 px-4 md:px-6 md:text-base text-sm rounded-md py-2"
+              >
+                <i class="fa-solid fa-envelope text-highlight"></i>
+                <span class="text-gray-300">Email</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between my-28 px-6 text-gray-500 gap-20 lg:gap-6"
+        >
+          <div class="w-full lg:w-1/2 space-y-5">
+            <h2 class="text-2xl font-nunito text-white font-semibold">
+              ⚡ About Me
+            </h2>
+            <p>
+              Hey! I'm Abdul Rahman, I've been close to a computer since an
+              early age, and been passionate about it ever since.
+            </p>
+            <p>
+              I really liked to build stuff using
+              <span class="text-highlight">no-code tools</span> back in 2010,
+              and from that, I explored how to code myself, fast-forward to
+              today, I do programming in various languages and technologies, and
+              had the privilege to worked in a
+              <span class="text-highlight">Recruitment Company</span> and a
+              <span class="text-highlight">SaaS Company</span> I'm interested in
+              building something awesome with code and automate tasks with code,
+              currently focused on
+              <span class="text-highlight"
+                >Web & Mobile Development, Open Source</span
+              >
+              and
+              <span class="text-highlight">Competitive Programming</span>
+            </p>
+            <p>
+              When I'm not coding I play games with my friends, watch some show
+              on Netflix, or if the weather's good, play basketball! 🏀
+            </p>
+          </div>
+          <div class="">
+            <div class="relative pr-16">
+              <img
+                class="h-28 md:h-[140px] 2xl:h-[170px] absolute top-4 right-0"
+                src="./assets/26432.svg"
+                alt="svg"
+              />
+              <img
+                class="rounded-2xl sm:h-96"
+                src="./assets/profile.jpeg"
+                alt="profile"
+              />
+             
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
   </body>
 </html>
