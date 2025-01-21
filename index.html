@@ -20,14 +20,16 @@
     <link rel="stylesheet" href="./styles/output.css" />
     <title>Portfolio - 01</title>
   </head>
-  <body class="bg-black text-white font-prompt transition-all-500">
+  <body
+    class="bg-black text-white transition-all-500 scroll-smooth font-nunito"
+  >
     <header class="max-w-6xl fixed z-50 top-0 left-0 right-0 mx-auto">
       <nav>
         <div
           class="flex justify-between items-center py-4 border-b bg-black border-gray-100/10 px-6"
         >
           <a
-            class="text-3xl before:content-['{'] after:content-['}'] before:mr-2 before:text-gray-500 after:text-gray-500 before:font-nunito after:font-nunito after:ml-2 font-semibold cursor-pointer"
+            class="text-3xl before:content-['{'] after:content-['}'] before:mr-2 before:text-gray-500 after:text-gray-500 before: after: after:ml-2 font-semibold cursor-pointer"
             >U<span class="text-highlight">W</span></a
           >
           <button class="sm:hidden text-3xl text-white">
@@ -41,7 +43,7 @@
               class="h-[69px] items-center justify-between border-b border-gray-100/10 w-full px-6 mb-4 flex sm:hidden"
             >
               <a
-                class="text-2xl before:content-['{'] after:content-['}'] before:mr-2 before:text-gray-500 after:text-gray-500 before:font-nunito after:font-nunito after:ml-2 font-semibold cursor-pointer"
+                class="text-2xl before:content-['{'] after:content-['}'] before:mr-2 before:text-gray-500 after:text-gray-500 before: after: after:ml-2 font-semibold cursor-pointer"
                 >U<span class="text-highlight">W</span></a
               >
               <button id="closeMenu" class="text-3xl hover:text-highlight">
@@ -67,32 +69,23 @@
         </div>
       </nav>
     </header>
-    <main class="max-w-6xl mx-auto py-32 space-y-32 lg:py-[70px]">
-      <section class="hidden">
+    <main class="max-w-6xl mx-auto space-y-16 lg:space-y-32">
+      <section class="">
         <div
-          class="flex flex-col justify-center lg:h-[calc(100vh-140px)] 2xl:h-[60vh]"
+          class="pb-20 pt-32 lg:pt-44 lg:pb-24"
         >
           <div>
             <div class="relative px-6 pt-2">
-              <img
-                src="./assets/26432.svg"
-                class="h-28 md:h-[140px] 2xl:h-[170px] -z-10 absolute left-0 top-0"
-                alt="svg"
-              />
-              <h2 class="text-2xl text-highlight font-nunito">
-                Hey there!, i'm-
-              </h2>
-              <h1
-                class="text-6xl sm:text-7xl md:text-8xl 2xl:text-9xl font-bold -ml-1"
-              >
+              <h2 class="text-2xl text-highlight">Hey there!, i'm-</h2>
+              <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-[150px] font-bold font-prompt -ml-1">
                 Uniqweber.
               </h1>
             </div>
             <p
-              class="text-xl sm:text-2xl my-8 text-gray-500 sm:leading-8 transition-all-500 w-full lg:w-1/2 px-6"
+              class="text-xl sm:text-2xl my-8 text-gray-500 transition-all-500 w-full lg:w-1/2 px-6"
             >
-              <span class="text-white font-nunito">Software Engineer :</span> A
-              self-taught developer with an interest in Computer Science.
+              <span class="text-white">Software Engineer :</span> A self-taught
+              developer with an interest in Computer Science.
             </p>
             <div
               class="px-5 text-gray-500 text-xs md:text-base space-y-1 md:space-y-0"
@@ -104,7 +97,7 @@
                 🚀 Currently specializing in Frontend (React / Next.js)
               </p>
             </div>
-            <div class="px-5 mt-8 flex items-center gap-4 font-nunito">
+            <div class="px-5 mt-8 flex items-center gap-4">
               <button
                 class="flex items-center gap-2 bg-highlight/10 px-4 md:px-6 md:text-base text-sm rounded-md py-2"
               >
@@ -127,14 +120,12 @@
           </div>
         </div>
       </section>
-      <section class="hidden">
+      <section class="">
         <div
           class="flex flex-col-reverse lg:flex-row items-start justify-between px-6 text-gray-500 gap-20 lg:gap-6"
         >
           <div class="w-full lg:w-1/2 space-y-5">
-            <h2 class="text-2xl font-nunito text-white font-semibold">
-              ⚡ About Me
-            </h2>
+            <h2 class="text-2xl text-white font-bold">⚡ About Me</h2>
             <p>
               Hey! I'm Abdul Rahman, I've been close to a computer since an
               early age, and been passionate about it ever since.
@@ -176,13 +167,11 @@
           </div>
         </div>
       </section>
-      <section class="hidden">
-        <div class="px-6 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+      <section class="">
+        <div class="px-6 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16">
           <div>
-            <div class="mb-16  md:mb-32">
-              <h2 class="text-2xl font-nunito text-white font-semibold">
-                All Creative Works.
-              </h2>
+            <div class="mb-16 md:mb-32">
+              <h2 class="text-2xl text-white font-bold">All Creative Works.</h2>
               <p class="text-gray-500">
                 Here's some of my projects that I have worked on.
               </p>
@@ -201,9 +190,7 @@
               />
               <div class="px-4 py-3">
                 <div class="flex justify-between items-center pb-2">
-                  <h5 class="text-xl font-nunito font-semibold">
-                    Opinionmeter
-                  </h5>
+                  <h5 class="text-xl font-semibold">Opinionmeter</h5>
                   <span class="group-hover:text-highlight transition-all-500">
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                   </span>
@@ -230,7 +217,7 @@
                     <span>Chart.js</span>
                   </div>
                 </div>
-                <p class="text-gray-500 font-nunito  pt-2 pb-1">
+                <p class="text-gray-500 pt-2 pb-1">
                   A web app to analyze whether an opinion on specific topic is
                   positive or negative based on recent tweets using natural
                   Language Processing concept called Sentiment Analysis
@@ -238,7 +225,7 @@
               </div>
             </a>
           </div>
-          <div class="space-y-10 md:space-y-16">
+          <div class="space-y-6 md:space-y-16">
             <a
               href=""
               class="bg-[#080808] group hover:scale-105 transition-all-500 rounded-2xl w-full overflow-hidden border border-gray-100/10 block"
@@ -249,9 +236,7 @@
               />
               <div class="px-4 py-3">
                 <div class="flex justify-between items-center pb-2">
-                  <h5 class="text-xl font-nunito font-semibold">
-                    Creative Home
-                  </h5>
+                  <h5 class="text-xl font-semibold">Creative Home</h5>
                   <span class="group-hover:text-highlight transition-all-500">
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                   </span>
@@ -271,12 +256,11 @@
                     <i class="fa-brands fa-sass"></i>
                     <span>Sass</span>
                   </div>
-               
                 </div>
-                <p class="text-gray-500 font-nunito  pt-2 pb-1">
+                <p class="text-gray-500 pt-2 pb-1">
                   A web app to analyze whether an opinion on specific topic is
                   positive or negative based on recent tweets using natural
-                  Language 
+                  Language
                 </p>
               </div>
             </a>
@@ -290,9 +274,7 @@
               />
               <div class="px-4 py-3">
                 <div class="flex justify-between items-center pb-2">
-                  <h5 class="text-xl font-nunito font-semibold">
-                    Prayer Time API
-                  </h5>
+                  <h5 class="text-xl font-semibold">Prayer Time API</h5>
                   <span class="group-hover:text-highlight transition-all-500">
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                   </span>
@@ -319,13 +301,117 @@
                     <span>Chart.js</span>
                   </div>
                 </div>
-                <p class="text-gray-500 font-nunito  pt-2 pb-1">
+                <p class="text-gray-500 pt-2 pb-1">
                   A web app to analyze whether an opinion on specific topic is
                   positive or negative based on recent tweets using natural
-                  Language 
+                  Language
                 </p>
               </div>
             </a>
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <div class="px-6">
+          <div
+            class="mb-10 flex justify-between items-center flex-col md:flex-row gap-2"
+          >
+            <h2 class="text-2xl text-white font-bold">📰 Latest Article.</h2>
+            <a href="" class="text-highlight flex items-center gap-2"
+              ><span>View all articles </span>
+              <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <a
+              href=""
+              class="bg-[#080808] hover:scale-105 transition-all-500 rounded-2xl w-full overflow-hidden border border-gray-100/10 block px-6 pb-6 pt-5"
+            >
+              <h2 class="text-xl font-semibold">
+                Unleash Your Dev Blog: Write More with Github issues as your CMS
+              </h2>
+              <p class="text-gray-500 mt-4">
+                <span>April 2 2024 .</span>
+                <span>10 min read</span>
+              </p>
+            </a>
+            <a
+              href=""
+              class="bg-[#080808] hover:scale-105 transition-all-500 rounded-2xl w-full overflow-hidden border border-gray-100/10 block px-6 pb-6 pt-5"
+            >
+              <h2 class="text-xl font-semibold">
+                Unleash Your Dev Blog: Write More with Github issues as your CMS
+              </h2>
+              <p class="text-gray-500 mt-4">
+                <span>April 2 2024 .</span>
+                <span>10 min read</span>
+              </p>
+            </a>
+            <a
+              href=""
+              class="bg-[#080808] hover:scale-105 transition-all-500 rounded-2xl w-full overflow-hidden border border-gray-100/10 block px-6 pb-6 pt-5"
+            >
+              <h2 class="text-xl font-semibold">
+                Unleash Your Dev Blog: Write More with Github issues as your CMS
+              </h2>
+              <p class="text-gray-500 mt-4">
+                <span>April 2 2024 .</span>
+                <span>10 min read</span>
+              </p>
+            </a>
+            <a
+              href=""
+              class="bg-[#080808] hover:scale-105 transition-all-500 rounded-2xl w-full overflow-hidden border border-gray-100/10 block px-6 pb-6 pt-5"
+            >
+              <h2 class="text-xl font-semibold">
+                Unleash Your Dev Blog: Write More with Github issues as your CMS
+              </h2>
+              <p class="text-gray-500 mt-4">
+                <span>April 2 2024 .</span>
+                <span>10 min read</span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="px-6 flex flex-col md:flex-row items-end justify-between gap-10"
+        >
+          <div class="w-full md:w-1/2">
+            <h2 class="text-4xl text-white font-bold">Keep in touch.</h2>
+            <p class="text-gray-500 mb-6 mt-5">
+              I'm currently specializing in
+              <span class="text-highlight">Frontend Development</span> Feel free
+              to get in touch and talk more about your projects
+            </p>
+            <div class="flex items-center gap-4 text-highlight">
+              <button class="bg-highlight/10 px-4 py-2 rounded-md">
+                <i class="fa-brands fa-github"></i>
+              </button>
+              <button class="bg-highlight/10 px-4 py-2 rounded-md">
+                <i class="fa-brands fa-linkedin"></i>
+              </button>
+              <button class="bg-highlight/10 px-4 py-2 rounded-md">
+                <i class="fa-solid fa-envelope"></i>
+              </button>
+              <button class="bg-highlight/10 px-4 py-2 rounded-md">
+                <i class="fa-brands fa-solid fa-whatsapp"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-100/10 mt-10 md:mt-20 py-4 text-gray-500"
+        >
+          <div
+            class="px-6 flex flex-col md:flex-row items-center gap-2 justify-between"
+          >
+            <p class="">© 2025 All rights reserved.</p>
+            <div class="">
+              <span class="">Made with ❤️ by</span>
+              <span class="text-highlight">Uniqweber</span>
+            </div>
           </div>
         </div>
       </section>
